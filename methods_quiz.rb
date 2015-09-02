@@ -22,7 +22,15 @@ module MethodsQuiz
 		return false
 	end
 	# TODO - write closer_to
-
+	def closer_to?(targ, g1, g2)
+		if g1 == g2
+			return 0
+		elsif g1 - targ < g2
+			return g1
+		elsif g2 - targ < g1
+			return g2
+		end
+	end
 	# TODO - write two_as_one?
 
 	# TODO - write pig_latinify
