@@ -37,6 +37,7 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal true, @m.two_as_one?(2, 4, 6)
 		assert_equal true, @m.two_as_one?(5, 3, 2)
 		assert_equal true, @m.two_as_one?(1, 5, 6)
-		assert_equal false, @m.two_as_one?(4, 5, 4)
+		assert_equal true, @m.two_as_one?(1, 5, 4)
+		assert_equal false, @m.two_as_one?(4, 5, 10)
 	end
 end
