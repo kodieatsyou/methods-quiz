@@ -29,6 +29,7 @@ class MethodsQuizTest < MiniTest::Test
 
 	def test_closer_to?
 		assert_equal 5, @m.closer_to?(3, 5, 9)
+		assert_equal 7, @m.closer_to?(5, 10, 7)
 		assert_equal 0, @m.closer_to?(5, 9, 9)
 	end
 end
