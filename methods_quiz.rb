@@ -32,7 +32,12 @@ module MethodsQuiz
 		end
 	end
 	# TODO - write two_as_one?
-
+	def two_as_one?(a, b, c)
+		if a + b == c || a + c == b || b + c == a
+			return true
+		end
+		return false
+	end
 	# TODO - write pig_latinify
 
 end
