@@ -21,4 +21,9 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal "not hi", @m.not_string?("hi")
 		assert_equal "not bye", @m.not_string?("not bye")\
 	end
+
+	def test_icy_hot?
+		assert_equal true, @m.icy_hot?(-1, 101)
+		assert_equal false, @m.icy_hot?(0, 99)
+	end
 end
