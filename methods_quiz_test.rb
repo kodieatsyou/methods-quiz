@@ -40,4 +40,9 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal true, @m.two_as_one?(1, 5, 4)
 		assert_equal false, @m.two_as_one?(4, 5, 10)
 	end
+
+	def test_pig_latinify?
+		assert_equal "owcay", @m.pig_latinify?("cow")
+		assert_equal "iceway", @m.pig_latinify?("ice")
+	end
 end
