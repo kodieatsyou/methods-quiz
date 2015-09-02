@@ -15,4 +15,5 @@ class MethodsQuizTest < MiniTest::Test
 	def test_has_teen?
 		assert_equal true, @m.has_teen?(12, 13, 20)
 		assert_equal false, @m.has_teen?(12, 3, 20)
+	end
 end
